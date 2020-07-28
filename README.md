@@ -59,6 +59,8 @@ https://react-idx-kuc.netlify.app/#/book
 ***
 ### Blog :
 
+https://note.com/knaka0209/n/n5a52ffb4939c
+
 
 ***
 
