@@ -79,13 +79,7 @@ console.log(name, value)
         this.setState({
             [name]: value,
         })
-    }            
-    handleChangeTitle(e){
-        this.setState({ title: e.target.value })
-    }
-    handleChangeContent(e){
-        this.setState({ content: e.target.value })
-    }
+    }       
     handleChangeType(e){
         this.setState({type: e.target.value})
     }  
@@ -120,15 +114,15 @@ console.log(value)
                 <label>Title:</label>
                 <div className="col-sm-6">
                     <input type="text" className="form-control"
-                    value={this.state.title}
-                    onChange={this.handleChangeTitle.bind(this)}/>                    
+                    value={this.state.title} name="title"
+                    onChange={this.handleChange.bind(this)}/>                    
                 </div>
             </div>
             <div className="form-group">
                 <label>Content:</label>
                 <div className="col-sm-8">
-                    <textarea type="text" className="form-control" rows="3"
-                    onChange={this.handleChangeContent.bind(this)}
+                    <textarea type="text" name="content" className="form-control" rows="3"
+                    onChange={this.handleChange.bind(this)}
                     value={this.state.content} ></textarea>
                 </div>
             </div>
